@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Khởi Động Hệ AI Chiến Lược</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f5f5f5;
+            text-align: center;
+            padding-top: 100px;
+        }
+        button {
+            font-size: 24px;
+            padding: 20px 40px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .status {
+            margin-top: 50px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>🧠 HỆ THỐNG AI TỰ ĐỘNG CHIẾN LƯỢC</h1>
+    <button onclick="runAI()">🚀 BẮT ĐẦU HỆ AI</button>
+    <div class="status" id="status">Sẵn sàng...</div>
+
+    <script>
+        function runAI() {
+            document.getElementById("status").innerHTML = "⏳ Đang kích hoạt hệ AI...";
+            setTimeout(() => {
+                document.getElementById("status").innerHTML = "✅ Các AI đã chạy thành công! Kết quả đang được lưu vào Google Drive.";
+            }, 3000); // Mô phỏng xử lý
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Khởi Động Hệ AI Tự Động</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #e9f5ff;
+            text-align: center;
+            padding-top: 100px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        button {
+            font-size: 24px;
+            padding: 18px 36px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        .status {
+            margin-top: 40px;
+            font-size: 18px;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <h1>🚀 KHỞI ĐỘNG HỆ THỐNG AI TỰ ĐỘNG</h1>
+    <button onclick="runAI()">Bắt đầu</button>
+    <div class="status" id="status">Sẵn sàng...</div>
+
+    <script>
+        function runAI() {
+            document.getElementById("status").innerHTML = "⏳ Đang khởi động chuỗi AI...";
+            setTimeout(() => {
+                document.getElementById("status").innerHTML = "✅ Hệ thống AI đã hoàn tất chu trình!";
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
